@@ -85,7 +85,6 @@
     <button data-coin="BTC" class="active">BTC</button>
     <button data-coin="ETH">ETH</button>
     <button data-coin="XRP">XRP</button>
-    <button data-coin="BLZ">BLZ</button>
   </div>
 
   <div class="intervals" id="intervals">
@@ -143,7 +142,6 @@ const COINS = {
   BTC: { label: "BTC/EUR", binance: "BTCEUR", kraken: "XBTEUR", posKey: "btc_position" },
   ETH: { label: "ETH/EUR", binance: "ETHEUR", kraken: "ETHEUR", posKey: "eth_position" },
   XRP: { label: "XRP/EUR", binance: "XRPEUR", kraken: "XRPEUR", posKey: "xrp_position" },
-  BLZ: { label: "BLZ/EUR", binance: "BLZEUR", kraken: "BLZEUR", posKey: "blz_position" },
 };
 
 let state = { interval: "1h", coin: "BTC", candles: [], source: null, lastUpdate: null, timer: null, position: null, manualOpen: false, parentCandles: null };
